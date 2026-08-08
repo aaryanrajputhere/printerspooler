@@ -378,7 +378,7 @@ export default function Home() {
             </p>
             <a
               className="primary-button"
-              href="https://pcpackard.com/select-printer-software"
+              href="/select-printer-software"
             >
               Click Here For Printer Setup
             </a>

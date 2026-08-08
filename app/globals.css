@@ -40,6 +40,310 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.software-page {
+  min-height: 100vh;
+  background: #fff;
+  color: #121a2b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.software-top-stripe {
+  height: 30px;
+  background: #0873e8;
+}
+
+.software-hero {
+  min-height: 440px;
+  background:
+    linear-gradient(90deg, rgb(0 86 177 / 93%), rgb(0 75 163 / 88%)),
+    url("/pcpackard/banner-1.jpg") center / cover;
+  color: #fff;
+}
+
+.software-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(420px, 0.9fr);
+  gap: 42px;
+  align-items: center;
+  max-width: 1320px;
+  min-height: 440px;
+  margin: 0 auto;
+  padding: 40px 28px 46px;
+}
+
+.software-hero-copy h1 {
+  margin: 0;
+  font-size: clamp(2.05rem, 3.05vw, 2.55rem);
+  font-weight: 750;
+  line-height: 1.18;
+}
+
+.software-intro,
+.software-prompt {
+  margin: 18px 0 0;
+  font-size: 1.02rem;
+  line-height: 1.45;
+}
+
+.connection-list {
+  margin: 18px 0 0;
+  padding-left: 18px;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.software-prompt {
+  margin-top: 22px;
+}
+
+.printer-search {
+  display: flex;
+  max-width: 574px;
+  margin-top: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 23%);
+}
+
+.printer-search input {
+  min-width: 0;
+  flex: 1;
+  height: 55px;
+  padding: 0 16px;
+  border: 0;
+  color: #2d3541;
+  font: inherit;
+  font-size: 0.94rem;
+}
+
+.printer-search button {
+  width: 98px;
+  border: 0;
+  background: #087cf2;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.printer-search button:hover {
+  background: #0868cd;
+}
+
+.search-message {
+  margin: 10px 0 0;
+  color: #dbeeff;
+  font-size: 0.9rem;
+}
+
+.software-hero-art {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+}
+
+.software-hero-art img {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 525px);
+  height: auto;
+  filter: drop-shadow(0 20px 13px rgb(0 26 76 / 28%));
+}
+
+.printer-glow {
+  position: absolute;
+  right: 2%;
+  width: 204px;
+  height: 204px;
+  border-radius: 50%;
+  background: #f7f7f7;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 5%);
+}
+
+.printer-model-badge {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 51%;
+  min-width: 205px;
+  padding: 8px 20px;
+  border-radius: 7px;
+  background: #fff;
+  color: #202020;
+  font-size: 1.24rem;
+  text-align: center;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.software-benefits {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.95fr);
+  gap: 56px;
+  align-items: center;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 74px 28px 86px;
+}
+
+.software-benefits-copy h2,
+.software-followup h2 {
+  margin: 0 0 14px;
+  color: #0864bd;
+  font-size: clamp(2rem, 3.3vw, 2.35rem);
+  line-height: 1.2;
+}
+
+.software-benefits-copy p,
+.software-followup p {
+  margin: 0 0 18px;
+  font-size: 1.03rem;
+  line-height: 1.75;
+}
+
+.benefit-list {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.benefit-list li {
+  position: relative;
+  padding-left: 36px;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.benefit-list li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 3px;
+  background: #0875ce;
+  color: #fff;
+  content: "✓";
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.software-benefits-image {
+  overflow: hidden;
+  border: 1px solid #142537;
+  background: #edf6ff;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 16%);
+}
+
+.software-benefits-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.software-followup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 68px max(28px, calc((100vw - 1264px) / 2));
+  background: #f2f8ff;
+}
+
+.software-followup > div {
+  max-width: 760px;
+}
+
+.software-eyebrow {
+  margin-bottom: 10px !important;
+  color: #0864bd;
+  font-size: 0.82rem !important;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.software-chat-button {
+  display: inline-flex;
+  min-width: 150px;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background: #0875ce;
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 860px) {
+  .software-hero-inner,
+  .software-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .software-hero-inner {
+    padding-top: 52px;
+  }
+
+  .software-hero-art {
+    min-height: 270px;
+  }
+
+  .software-benefits-image {
+    order: -1;
+  }
+
+  .software-followup {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  .software-hero-inner,
+  .software-benefits {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .software-hero-copy h1 br {
+    display: none;
+  }
+
+  .printer-search input {
+    font-size: 0.82rem;
+  }
+
+  .printer-glow {
+    right: 4%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .printer-model-badge {
+    right: -5px;
+    min-width: 160px;
+    font-size: 1rem;
+  }
+}
+
 .top-stripe {
   height: 30px;
   background: var(--blue);
