@@ -376,7 +376,10 @@ export default function Home() {
               Follow an easy, step-by-step method to connect your device, adjust
               settings, and learn the basics for daily printing at home or work.
             </p>
-            <a className="primary-button" href="#setup-guide">
+            <a
+              className="primary-button"
+              href="https://pcpackard.com/select-printer-software"
+            >
               Click Here For Printer Setup
             </a>
           </div>
