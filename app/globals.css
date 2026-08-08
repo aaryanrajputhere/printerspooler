@@ -67,8 +67,8 @@ a:focus-visible {
 .software-hero {
   min-height: 440px;
   background:
-    linear-gradient(90deg, rgb(0 86 177 / 93%), rgb(0 75 163 / 88%)),
-    url("/pcpackard/banner-1.jpg") center / cover;
+    linear-gradient(90deg, #0754a8 0%, #0757ad 58%, #064b9b 100%),
+    url("/pcpackard/bg-line.png") right center / 560px auto no-repeat;
   color: #fff;
 }
 
@@ -123,9 +123,15 @@ a:focus-visible {
   height: 55px;
   padding: 0 16px;
   border: 0;
+  background: #fff;
   color: #2d3541;
   font: inherit;
   font-size: 0.94rem;
+}
+
+.printer-search input::placeholder {
+  color: #667085;
+  opacity: 1;
 }
 
 .printer-search button {
