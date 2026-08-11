@@ -20,13 +20,13 @@ export async function generateMetadata(): Promise<Metadata> {
     "Clear, step-by-step help for printer setup, wireless connection, scanning, and common printer issues.";
 
   return {
-    title: "PC Packard | Smart Printer Setup",
+    title: "Printerspooler | Smart Printer Setup",
     description,
     icons: {
       icon: "/favicon.svg",
     },
     openGraph: {
-      title: "PC Packard | Smart Printer Setup",
+      title: "Printerspooler | Smart Printer Setup",
       description,
       type: "website",
       images: [
@@ -34,13 +34,13 @@ export async function generateMetadata(): Promise<Metadata> {
           url: `${origin}/og.png`,
           width: 1728,
           height: 909,
-          alt: "PC Packard Smart Printer Setup",
+          alt: "Printerspooler Smart Printer Setup",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "PC Packard | Smart Printer Setup",
+      title: "Printerspooler | Smart Printer Setup",
       description,
       images: [`${origin}/og.png`],
     },

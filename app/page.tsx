@@ -3,30 +3,30 @@
 import { useEffect, useState } from "react";
 
 const heroSlides = [
-  { src: "/pcpackard/set-1.png", alt: "All-in-one home printer" },
-  { src: "/pcpackard/set-2.png", alt: "Compact wireless printer" },
-  { src: "/pcpackard/set-3.png", alt: "Desktop printer" },
+  { src: "/printerspooler/set-1.png", alt: "All-in-one home printer" },
+  { src: "/printerspooler/set-2.png", alt: "Compact wireless printer" },
+  { src: "/printerspooler/set-3.png", alt: "Desktop printer" },
 ];
 
 const supportIssues = [
-  { icon: "/pcpackard/i1.svg", label: "Printer Set Up Issue" },
-  { icon: "/pcpackard/i2.svg", label: "Printer Offline" },
-  { icon: "/pcpackard/i3.svg", label: "Wireless printer issue" },
-  { icon: "/pcpackard/i4.svg", label: "Paper jam issue" },
-  { icon: "/pcpackard/i5.svg", label: "Printer Job Stuck In Queue" },
-  { icon: "/pcpackard/i6.svg", label: "Scanner issues" },
+  { icon: "/printerspooler/i1.svg", label: "Printer Set Up Issue" },
+  { icon: "/printerspooler/i2.svg", label: "Printer Offline" },
+  { icon: "/printerspooler/i3.svg", label: "Wireless printer issue" },
+  { icon: "/printerspooler/i4.svg", label: "Paper jam issue" },
+  { icon: "/printerspooler/i5.svg", label: "Printer Job Stuck In Queue" },
+  { icon: "/printerspooler/i6.svg", label: "Scanner issues" },
 ];
 
 const banners = [
-  "/pcpackard/banner-1.jpg",
-  "/pcpackard/banner-2.jpg",
-  "/pcpackard/banner-3.jpg",
+  "/printerspooler/banner-1.jpg",
+  "/printerspooler/banner-2.jpg",
+  "/printerspooler/banner-3.jpg",
 ];
 
 const lowerBanners = [
-  "/pcpackard/lower-banner-1.jpg",
-  "/pcpackard/lower-banner-2.jpg",
-  "/pcpackard/lower-banner-3.jpg",
+  "/printerspooler/lower-banner-1.jpg",
+  "/printerspooler/lower-banner-2.jpg",
+  "/printerspooler/lower-banner-3.jpg",
 ];
 
 const setupSteps = [
@@ -59,37 +59,37 @@ const manualDeviceSteps = [
 
 const outsourcingBenefits = [
   {
-    icon: "/pcpackard/outsourcing-1.png",
+    icon: "/printerspooler/outsourcing-1.png",
     title: "Specialised Team",
     description:
-      "Highly skilled PC Packard experts provide support. We resolve issues, answer enquiries, and keep your business productive and secure daily.",
+      "Highly skilled Printerspooler experts provide support. We resolve issues, answer enquiries, and keep your business productive and secure daily.",
   },
   {
-    icon: "/pcpackard/outsourcing-2.png",
+    icon: "/printerspooler/outsourcing-2.png",
     title: "Innovation-Driven Technology",
     description:
       "In order to avoid downtime and speed up resolution times, we employ intelligent, data-driven technologies to identify any problems in their early stages.",
   },
   {
-    icon: "/pcpackard/outsourcing-3.png",
+    icon: "/printerspooler/outsourcing-3.png",
     title: "Hyper Service Automation",
     description:
-      "To ensure consistency in quality across all IT processes, increase response speed, and improve accuracy, PC Packard uses intelligent automation.",
+      "To ensure consistency in quality across all IT processes, increase response speed, and improve accuracy, Printerspooler uses intelligent automation.",
   },
   {
-    icon: "/pcpackard/outsourcing-4.png",
+    icon: "/printerspooler/outsourcing-4.png",
     title: "Fast, Reliable Help",
     description:
       "If your team ever needs assistance, our specialists are always there to help via email with prompt guidance and reliable support.",
   },
   {
-    icon: "/pcpackard/outsourcing-5.png",
+    icon: "/printerspooler/outsourcing-5.png",
     title: "Clear and Simple Pricing",
     description:
       "Dependable IT assistance tailored to your company’s specific requirements, with transparent, predictable pricing and zero surprises.",
   },
   {
-    icon: "/pcpackard/outsourcing-6.png",
+    icon: "/printerspooler/outsourcing-6.png",
     title: "Total Safety Assured",
     description:
       "Our comprehensive security approach includes encryption, testing, monitoring, and IT environment protection for every client.",
@@ -433,7 +433,7 @@ export default function Home() {
         <div className="banner-carousel">
           <img
             src={banners[bannerIndex]}
-            alt="PC Packard printer support services"
+            alt="Printerspooler printer support services"
             width={970}
             height={191}
           />
@@ -472,7 +472,7 @@ export default function Home() {
         <div className="guide-row">
           <div className="guide-image-wrap">
             <img
-              src="/pcpackard/setup-guide.jpg"
+              src="/printerspooler/setup-guide.jpg"
               alt="Printer and laptop ready for setup"
               width={543}
               height={509}
@@ -498,7 +498,7 @@ export default function Home() {
         <div className="guide-row reverse">
           <div className="guide-image-wrap">
             <img
-              src="/pcpackard/offline-guide.jpg"
+              src="/printerspooler/offline-guide.jpg"
               alt="Wireless printer troubleshooting"
               width={782}
               height={606}
@@ -524,7 +524,7 @@ export default function Home() {
         <div className="guide-row">
           <div className="manual-device-preview">
             <img
-              src="/pcpackard/manual-device-guide.png"
+              src="/printerspooler/manual-device-guide.png"
               alt="Windows Add Printer options for manually finding a printer"
               width={1417}
               height={805}
@@ -555,7 +555,7 @@ export default function Home() {
         <div className="banner-carousel">
           <img
             src={lowerBanners[lowerBannerIndex]}
-            alt="PC Packard printer setup guidance"
+            alt="Printerspooler printer setup guidance"
             width={970}
             height={191}
             loading="lazy"
@@ -597,7 +597,7 @@ export default function Home() {
             Streamline <span>Daily Printing Tasks</span>
           </h2>
           <p>
-            <strong>PC Packard</strong> Smart Printer Setup helps you handle
+            <strong>Printerspooler</strong> Smart Printer Setup helps you handle
             frequent work-site printing issues. Whether you’re dealing with
             numerous network configurations, arranging home printing access,
             or connecting devices across locations, the platform offers
@@ -605,7 +605,7 @@ export default function Home() {
           </p>
           <div className="streamline-preview">
             <img
-              src="/pcpackard/streamline-printing-guide.png"
+              src="/printerspooler/streamline-printing-guide.png"
               alt="Smart Printer Setup software shown across three displays"
               width={1851}
               height={959}
@@ -617,7 +617,7 @@ export default function Home() {
 
       <section className="outsourcing-section">
         <div className="outsourcing-content">
-          <h2>Importance of PC Packard Support Outsourcing</h2>
+          <h2>Importance of Printerspooler Support Outsourcing</h2>
           <div className="outsourcing-grid">
             {outsourcingBenefits.map((benefit) => (
               <article className="outsourcing-card" key={benefit.title}>
@@ -641,7 +641,7 @@ export default function Home() {
           <div className="print-anywhere-main">
             <div className="print-anywhere-image">
               <img
-                src="/pcpackard/print-anywhere.png"
+                src="/printerspooler/print-anywhere.png"
                 alt="Phone sending a document wirelessly to a printer"
                 width={500}
                 height={500}
@@ -732,13 +732,6 @@ export default function Home() {
         <div className="footer-inner">
           <div className="footer-main">
             <div className="footer-brand">
-              <img
-                src="/pcpackard/footer-logo.png"
-                alt="PC Packard"
-                width={150}
-                height={150}
-                loading="lazy"
-              />
               <p>
                 Any Questions? We’re here to help! Available between 9 AM – 8
                 PM CT, 7 days a week.
@@ -788,7 +781,7 @@ export default function Home() {
                 </svg>
                 <div>
                   <strong>Email</strong>
-                  <a href="mailto:info@pcpackard.com">info@pcpackard.com</a>
+                  <a href="mailto:info@printerspooler.com">info@printerspooler.com</a>
                 </div>
               </div>
               <div className="contact-line">
@@ -808,14 +801,14 @@ export default function Home() {
 
           <div className="footer-trust-row">
             <img
-              src="/pcpackard/footer-trust-1.png"
+              src="/printerspooler/footer-trust-1.png"
               alt="Secured by Sectigo"
               width={132}
               height={51}
               loading="lazy"
             />
             <img
-              src="/pcpackard/footer-trust-2.png"
+              src="/printerspooler/footer-trust-2.png"
               alt="Google Safe Browsing"
               width={132}
               height={51}
@@ -823,7 +816,7 @@ export default function Home() {
             />
             <img
               className="payment-icons"
-              src="/pcpackard/footer-payment.png"
+              src="/printerspooler/footer-payment.png"
               alt="Visa, Mastercard, American Express, and Discover accepted"
               width={180}
               height={71}
@@ -833,7 +826,7 @@ export default function Home() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 PC Packard - All Rights Reserved.</p>
+          <p>© 2026 Printerspooler - All Rights Reserved.</p>
           <nav aria-label="Legal links">
             <a href="#setup-guide">Terms &amp; Conditions</a>
             <a href="#setup-guide">Privacy Policy</a>

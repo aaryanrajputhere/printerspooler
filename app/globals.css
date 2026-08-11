@@ -68,7 +68,7 @@ a:focus-visible {
   min-height: 440px;
   background:
     linear-gradient(90deg, #0754a8 0%, #0757ad 58%, #064b9b 100%),
-    url("/pcpackard/bg-line.png") right center / 560px auto no-repeat;
+    url("/printerspooler/bg-line.png") right center / 560px auto no-repeat;
   color: #fff;
 }
 
@@ -425,7 +425,7 @@ a:focus-visible {
   position: relative;
   min-height: 410px;
   overflow: hidden;
-  background: url("/pcpackard/bg-line.png") center / 100% 100% no-repeat;
+  background: url("/printerspooler/bg-line.png") center / 100% 100% no-repeat;
 }
 
 .hero-slides {

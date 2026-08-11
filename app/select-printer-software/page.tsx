@@ -67,7 +67,7 @@ export default function SelectPrinterSoftwarePage() {
           <div className="software-hero-art" aria-label="Printer setup preview">
             <div className="printer-glow" />
             <img
-              src="/pcpackard/set-1.png"
+              src="/printerspooler/set-1.png"
               alt="All-in-one printer"
               width={525}
               height={357}
@@ -99,7 +99,7 @@ export default function SelectPrinterSoftwarePage() {
         </div>
         <div className="software-benefits-image">
           <img
-            src="/pcpackard/manual-device-guide.png"
+            src="/printerspooler/manual-device-guide.png"
             alt="Windows printer and scanner settings"
             width={1417}
             height={805}
@@ -117,7 +117,7 @@ export default function SelectPrinterSoftwarePage() {
             fine-tune settings, and connect your devices with confidence.
           </p>
         </div>
-        <a className="software-chat-button" href="mailto:info@pcpackard.com">
+        <a className="software-chat-button" href="mailto:info@printerspooler.com">
           Chat With Us
         </a>
       </section>
