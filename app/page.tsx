@@ -741,10 +741,6 @@ export default function Home() {
             <div className="footer-column">
               <h2>Our Services</h2>
               <nav aria-label="Our services">
-                <a href="#setup-guide">Computer</a>
-                <a href="#setup-guide">Printer &amp; Scanner</a>
-                <a href="#setup-guide">WiFi &amp; Network</a>
-                <a href="#setup-guide">Smart Home</a>
                 <a href="#setup-guide">Contact Us</a>
               </nav>
             </div>
@@ -753,11 +749,6 @@ export default function Home() {
               <h2>Useful Links</h2>
               <nav aria-label="Useful links">
                 <a href="#setup-guide">About Us</a>
-                <a href="#setup-guide">Partner With Us</a>
-                <a href="#setup-guide">Membership</a>
-                <a href="#setup-guide">FAQ’s</a>
-                <a href="#setup-guide">Cookie Policy</a>
-                <a href="#setup-guide">Sitemap</a>
               </nav>
             </div>
 
@@ -765,11 +756,9 @@ export default function Home() {
               <h2>Policies</h2>
               <nav aria-label="Policies">
                 <a href="#setup-guide">Disclaimer</a>
-                <a href="#setup-guide">Privacy &amp; Policy</a>
-                <a href="#setup-guide">Cancellation Policy</a>
+                <a href="#setup-guide">Privacy Policy</a>
                 <a href="#setup-guide">Terms &amp; Conditions</a>
                 <a href="#setup-guide">Return Policy</a>
-                <a href="#setup-guide">Shipping Policy</a>
               </nav>
             </div>
 

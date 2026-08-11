@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const benefits = [
   "Works with a wide range of printers and compatible devices.",
@@ -12,17 +13,19 @@ const benefits = [
 ];
 
 export default function SelectPrinterSoftwarePage() {
+  const router = useRouter();
   const [model, setModel] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const trimmedModel = model.trim();
-    setMessage(
-      trimmedModel
-        ? `We’re checking setup options for “${trimmedModel}”.`
-        : "Enter your printer model to see setup options.",
-    );
+    if (!trimmedModel) {
+      setMessage("Enter your printer model to see setup options.");
+      return;
+    }
+
+    router.push(`/setup-printer-software?query=${encodeURIComponent(trimmedModel)}`);
   };
 
   return (
@@ -107,20 +110,6 @@ export default function SelectPrinterSoftwarePage() {
         </div>
       </section>
 
-      <section className="software-followup" aria-labelledby="followup-title">
-        <div>
-          <p className="software-eyebrow">The appropriate software for your printing needs</p>
-          <h2 id="followup-title">A clearer path to dependable printing</h2>
-          <p>
-            Improve your printing setup with tools that prioritise control,
-            clarity, and consistent output. Manage print jobs efficiently,
-            fine-tune settings, and connect your devices with confidence.
-          </p>
-        </div>
-        <a className="software-chat-button" href="mailto:info@printerspooler.com">
-          Chat With Us
-        </a>
-      </section>
     </main>
   );
 }
