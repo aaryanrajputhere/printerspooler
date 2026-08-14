@@ -124,6 +124,15 @@ export default async function SetupPrinterSoftwarePage({ searchParams }: SetupPa
   return (
     <main className="setup-results-page" id="top">
       <div className="setup-results-stripe" />
+      <div className="setup-page-brand" aria-label="Printerspooler">
+        <img
+          src="/printerspooler/printerspooler-logo.png"
+          alt=""
+          width={48}
+          height={48}
+        />
+        <span>Printerspooler</span>
+      </div>
 
       <section className="setup-results-hero" aria-labelledby="setup-results-title">
         <div className="setup-results-hero-inner">
@@ -140,11 +149,14 @@ export default async function SetupPrinterSoftwarePage({ searchParams }: SetupPa
               <li>Compatible with Windows &amp; macOS</li>
               <li>Printer Setup and Connectivity Guides</li>
             </ul>
+            <span className="setup-results-cta" aria-disabled="true">
+              Click for Chat Assistance
+            </span>
           </div>
           <div className="setup-results-hero-image">
             <img
-              src="/printerspooler/setup-guide.jpg"
-              alt="Person working near a printer while setting up a computer"
+              src="/printerspooler/banner-3.jpg"
+              alt="Person using a laptop beside a printer and scanner"
               width={782}
               height={606}
             />

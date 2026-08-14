@@ -732,6 +732,13 @@ export default function Home() {
         <div className="footer-inner">
           <div className="footer-main">
             <div className="footer-brand">
+              <img
+                src="/printerspooler/printerspooler-logo.png"
+                alt="Printerspooler"
+                width={110}
+                height={111}
+                loading="lazy"
+              />
               <p>
                 Any Questions? We’re here to help! Available between 9 AM – 8
                 PM CT, 7 days a week.

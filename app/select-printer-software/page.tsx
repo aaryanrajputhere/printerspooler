@@ -31,6 +31,15 @@ export default function SelectPrinterSoftwarePage() {
   return (
     <main className="software-page">
       <div className="software-top-stripe" />
+      <div className="setup-page-brand" aria-label="Printerspooler">
+        <img
+          src="/printerspooler/printerspooler-logo.png"
+          alt=""
+          width={48}
+          height={48}
+        />
+        <span>Printerspooler</span>
+      </div>
 
       <section className="software-hero" aria-labelledby="software-title">
         <div className="software-hero-inner">
