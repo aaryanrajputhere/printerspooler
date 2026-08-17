@@ -124,15 +124,6 @@ export default async function SetupPrinterSoftwarePage({ searchParams }: SetupPa
   return (
     <main className="setup-results-page" id="top">
       <div className="setup-results-stripe" />
-      <div className="setup-page-brand" aria-label="Printerspooler">
-        <img
-          src="/printerspooler/printerspooler-logo.png"
-          alt=""
-          width={48}
-          height={48}
-        />
-        <span>Printerspooler</span>
-      </div>
 
       <section className="setup-results-hero" aria-labelledby="setup-results-title">
         <div className="setup-results-hero-inner">
