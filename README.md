@@ -16,6 +16,33 @@ npm run dev
 npm run build
 ```
 
+## Google Tag Manager
+
+The production default is container `GTM-5RWHTGKX`. To use a different Web
+container in another environment, copy `.env.example` to `.env.local` and set
+`NEXT_PUBLIC_GTM_ID` to that container ID.
+
+The app pushes these custom events to GTM's data layer:
+
+- `select_printer_software_click`
+- `support_topic_click`
+- `contact_click`
+- `email_click`
+- `printer_search_submit`
+- `printer_search_error`
+
+In Google Tag Manager, add a Google tag using your GA4 measurement ID, then
+create GA4 Event tags for the custom event names above. Use Custom Event
+triggers with matching names and publish the container after testing it in
+Preview mode. Mark the events that matter (for example,
+`printer_search_submit` or `email_click`) as key events in Google Analytics.
+
+For Google Ads attribution, link the GA4 property to the Google Ads account and
+import those key events as conversions. Alternatively, add a Conversion Linker
+and Google Ads Conversion Tracking tags in GTM using the conversion ID and label
+from Google Ads. GTM collects site interactions; campaign cost, impressions, and
+ad clicks remain available in Google Ads after the accounts are linked.
+
 This starter does not use `wrangler.jsonc`.
 
 ## Included Shape

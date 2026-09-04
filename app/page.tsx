@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { sendGTMEvent } from "./google-tag-manager";
 
 const heroSlides = [
   { src: "/printerspooler/set-1.png", alt: "All-in-one home printer" },
@@ -379,6 +380,12 @@ export default function Home() {
             <a
               className="primary-button"
               href="/select-printer-software"
+              onClick={() =>
+                sendGTMEvent({
+                  event: "select_printer_software_click",
+                  link_location: "hero",
+                })
+              }
             >
               Click Here For Printer Setup
             </a>
@@ -421,7 +428,17 @@ export default function Home() {
       <section className="support-section" aria-label="Common printer support issues">
         <div className="support-grid">
           {supportIssues.map((issue) => (
-            <a className="support-card" href="#setup-guide" key={issue.label}>
+            <a
+              className="support-card"
+              href="#setup-guide"
+              key={issue.label}
+              onClick={() =>
+                sendGTMEvent({
+                  event: "support_topic_click",
+                  support_topic: issue.label,
+                })
+              }
+            >
               <img src={issue.icon} alt="" width={70} height={70} />
               <span>{issue.label}</span>
             </a>
@@ -662,7 +679,16 @@ export default function Home() {
                 the cloud, guaranteeing your printing demands are met now and
                 in the future.
               </p>
-              <a className="contact-button" href="#setup-guide">
+              <a
+                className="contact-button"
+                href="#setup-guide"
+                onClick={() =>
+                  sendGTMEvent({
+                    event: "contact_click",
+                    link_location: "print_anywhere",
+                  })
+                }
+              >
                 Contact Us
               </a>
             </div>
@@ -777,7 +803,17 @@ export default function Home() {
                 </svg>
                 <div>
                   <strong>Email</strong>
-                  <a href="mailto:info@printerspooler.com">info@printerspooler.com</a>
+                  <a
+                    href="mailto:info@printerspooler.com"
+                    onClick={() =>
+                      sendGTMEvent({
+                        event: "email_click",
+                        link_location: "footer",
+                      })
+                    }
+                  >
+                    info@printerspooler.com
+                  </a>
                 </div>
               </div>
               <div className="contact-line">

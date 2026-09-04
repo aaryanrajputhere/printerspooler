@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import { sendGTMEvent } from "../google-tag-manager";
 
 const benefits = [
   "Works with a wide range of printers and compatible devices.",
@@ -21,10 +22,12 @@ export default function SelectPrinterSoftwarePage() {
     event.preventDefault();
     const trimmedModel = model.trim();
     if (!trimmedModel) {
+      sendGTMEvent({ event: "printer_search_error", error_type: "empty_model" });
       setMessage("Enter your printer model to see setup options.");
       return;
     }
 
+    sendGTMEvent({ event: "printer_search_submit" });
     router.push(`/setup-printer-software?query=${encodeURIComponent(trimmedModel)}`);
   };
 
