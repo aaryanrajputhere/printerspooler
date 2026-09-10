@@ -1530,12 +1530,29 @@ a:focus-visible {
   justify-content: center;
   margin-top: 22px;
   padding: 13px 24px;
+  border: 0;
   border-radius: 11px;
   background: #1175f4;
   box-shadow: 0 5px 12px rgb(10 75 168 / 28%);
   color: #fff;
+  cursor: pointer;
+  font-family: inherit;
   font-size: 1.05rem;
   text-align: center;
+}
+
+.setup-results-cta:hover:not(:disabled) {
+  background: #0866d8;
+}
+
+.setup-results-cta:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.setup-results-cta:disabled {
+  cursor: wait;
+  opacity: 0.72;
 }
 
 .setup-results-hero-image {
@@ -1631,7 +1648,7 @@ a:focus-visible {
 
 .back-to-top {
   position: fixed;
-  right: 28px;
+  right: 96px;
   bottom: 26px;
   display: grid;
   width: 46px;
@@ -1689,7 +1706,7 @@ a:focus-visible {
   }
 
   .back-to-top {
-    right: 16px;
+    right: 84px;
     bottom: 16px;
   }
 }

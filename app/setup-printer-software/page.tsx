@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ChatAssistanceButton } from "./chat-assistance-button";
 
 type SetupPageProps = {
   searchParams: Promise<{ query?: string }>;
@@ -140,9 +141,7 @@ export default async function SetupPrinterSoftwarePage({ searchParams }: SetupPa
               <li>Compatible with Windows &amp; macOS</li>
               <li>Printer Setup and Connectivity Guides</li>
             </ul>
-            <span className="setup-results-cta" aria-disabled="true">
-              Click for Chat Assistance
-            </span>
+            <ChatAssistanceButton />
           </div>
           <div className="setup-results-hero-image">
             <img

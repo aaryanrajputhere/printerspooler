@@ -76,6 +76,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','${googleTagManagerId}');`}
         </Script>
+        <Script
+          id="jivo-chat-widget"
+          src="https://code.jivosite.com/widget/oG59z23wRg"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
